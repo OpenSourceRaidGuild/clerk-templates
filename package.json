@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev:react": "dotenv -- turbo run dev --filter react-clerk",
+    "dev:nextjs-pages": "dotenv -- turbo run dev --filter nextjs-pages-clerk",
+    "dev": "dotenv -- turbo run dev --parallel",
+    "clean": "turbo run clean",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+"devDependencies": {
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3",
+    "tsconfig": "workspace:*",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.6.10",
+  "name": "clerk-templates",
+  "dependencies": {
+    "dotenv-cli": "^7.3.0"
+  }
+}
