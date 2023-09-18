@@ -7,9 +7,11 @@
     "dev": "dotenv -- turbo run dev --parallel",
     "clean": "turbo run clean",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "new:template": "turbo gen template"
   },
-"devDependencies": {
+  "devDependencies": {
+    "@turbo/gen": "latest",
     "eslint": "^8.49.0",
     "prettier": "^3.0.3",
     "tsconfig": "workspace:*",
