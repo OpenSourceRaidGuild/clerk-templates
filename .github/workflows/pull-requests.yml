@@ -5,7 +5,7 @@ on:
     branches: ["*"]
 
 jobs:
-  build-lint:
+  pull-request:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@8.6.10
+        uses: pnpm/action-setup@v2
 
       - name: Setup Node 20
         uses: actions/setup-node@v3
