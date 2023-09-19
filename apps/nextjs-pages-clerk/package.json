@@ -12,8 +12,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "prettier --check \"**/*.{ts,tsx,md}\"",
-    "typecheck": "tsc"
+    "lint": "prettier --check \"**/*.{ts,tsx,md}\""
   },
   "dependencies": {
     "@clerk/nextjs": "^4.23.5",
