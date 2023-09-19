@@ -7,6 +7,7 @@ import Layout from "./components/Layout";
 import NoMatch from "./components/NoMatch";
 
 import "./styles/index.css";
+import { Fetch } from "./routes/fetch";
 
 const publishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<App />} />
+            <Route path="/fetch" element={<Fetch />} />
           </Route>
           <Route path="*" element={<NoMatch />} />
         </Routes>
