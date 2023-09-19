@@ -14,7 +14,7 @@ const installDeps: PlopTypes.CustomActionFunction = async (answers) => {
 
   execSync(
     //@ts-expect-error answers is `object` but should be unknown or a generic object type
-    `cd apps/${answers.name} && pnpm install -D prettier typescript eslint`
+    `cd apps/${answers.name} && pnpm install -D prettier typescript eslint`,
   );
   //@ts-expect-error answers is `object` but should be unknown or a generic object type
   execSync(`cd apps/${answers.name} && pnpm install @clerk/clerk-js`);
