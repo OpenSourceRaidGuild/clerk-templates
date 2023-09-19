@@ -1,0 +1,30 @@
+name: Pull Requests
+
+on:
+  pull_request:
+    branches: ["*"]
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install deps
+        run: pnpm install
+
+      - name: lint and type-check
+        run: pnpm turbo lint typecheck
+
+      - name: Check workspaces
+        run: pnpm manypkg check

@@ -12,9 +12,9 @@
         ".env.production",
         ".env"
       ]
-
-    }, 
+    },
     "lint": {},
+    "typecheck": {},
     "dev": {
       "cache": false,
       "persistent": true,
@@ -26,7 +26,7 @@
       ]
     },
     "clean": {
-         "cache": false
-      }
+      "cache": false
+    }
   }
 }
