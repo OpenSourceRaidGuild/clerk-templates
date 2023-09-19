@@ -8,7 +8,8 @@
     "clean": "turbo run clean",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "new:template": "turbo gen template"
+    "new:template": "turbo gen template",
+    "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
     "@turbo/gen": "latest",

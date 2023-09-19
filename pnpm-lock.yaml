@@ -89,6 +89,9 @@ importers:
       eslint-plugin-react-refresh:
         specifier: ^0.3.5
         version: 0.3.5(eslint@8.49.0)
+      typescript:
+        specifier: ^5.2.2
+        version: 5.2.2
       vite:
         specifier: ^4.4.9
         version: 4.4.9(@types/node@20.6.2)
@@ -5147,6 +5150,12 @@ packages:
   /typescript@4.9.5:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
+
+  /typescript@5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
     hasBin: true
     dev: true
 
