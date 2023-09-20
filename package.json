@@ -2,17 +2,18 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "dev:react": "dotenv -- turbo run dev --filter react-clerk",
-    "dev:nextjs-pages": "dotenv -- turbo run dev --filter nextjs-pages-clerk",
-    "dev:nextjs-app-router": "dotenv -- turbo run dev --filter nextjs-app-router-clerk",
-    "dev:redwood": "dotenv -- turbo redwood dev --filter redwood-clerk",
     "dev:fastify": "dotenv -- turbo run dev --filter fastify-clerk",
+    "dev:gatsby": "dotenv -- turbo run dev --filter gatsby-clerk",
+    "dev:nextjs-app-router": "dotenv -- turbo run dev --filter nextjs-app-router-clerk",
+    "dev:nextjs-pages": "dotenv -- turbo run dev --filter nextjs-pages-clerk",
+    "dev:react": "dotenv -- turbo run dev --filter react-clerk",
     "dev:react+fastify": "dotenv -- turbo run dev --filter react-clerk --filter fastify-clerk",
     "dev": "dotenv -- turbo run dev --parallel",
     "clean": "turbo run clean",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "new:template": "turbo gen template"
+    "new:template": "turbo gen template",
+    "new:copy": "turbo gen workspace" 
   },
   "devDependencies": {
     "@turbo/gen": "latest",
